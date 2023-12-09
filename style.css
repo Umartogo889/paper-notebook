@@ -1,0 +1,48 @@
+body {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+
+}
+
+.notepad {
+    top: 80px;
+    position: relative;
+    width: 805px;
+    height: 700px;
+    max-width: 600px;
+    box-shadow: 10px 10px 40px rgb(0, 0, 0, 0.15);
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.top {
+    height: 50px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 5px 5px 0 0;
+}
+
+.top::selection {
+    color: red;
+ 
+}
+
+.paper::selection {
+    color: red;
+    background-color: none;
+}
+
+.paper {
+    width: 100%;
+    height: 100vh;
+    min-height: 60vh;
+    padding: 35px 20px;
+    background: repeating-linear-gradient(#f1ede9, #f1ede9 31px, #94acd4 31px, #94acd4 32px);
+    font-family: "shadows Into Light", cursive;
+    line-height: 32px;
+    outline: 0;
+    font-size: 22px;
+}
